@@ -4,7 +4,7 @@ const app = express();
 const http = require('http');
 const server = http.Server(app);
 
-app.use(express.static('client'));
+app.use(express.static('../client'));
 
 const io = require('socket.io')(server);
 
