@@ -12,4 +12,3 @@ $('form').on('submit', function () {
 socket.on('message', function (msg) {
     $('<li>').text(msg).appendTo('#history');    
 });
-
